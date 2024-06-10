@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+
+    <script src="/bootstrap/bootstrap.min.js"></script>
+    <script type="module" src="/navbar-admin/navbar.js"></script>
+    <script type="module" src="/navigation/JS/home.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div id="navbar-container"></div>
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 ">
+
+                <div id="navbar-container"></div>
+
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                    <div class="card-body">
+
+                        <!--FORMULÁRIO DE PREÇOS-->
+                        <form class="text-center">
+
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <fieldset>
+
+                                        <div class="card-header">Preços do estacionamento</div>
+
+                                        <div class="mb-2">
+                                            <label>Preço fixo</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">R$</span>
+                                                <input type="text" id="precoFixo" class="form-control" readonly>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-2">
+                                            <label>Preço por hora</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">R$</span>
+                                                <input type="text" id="precoHora" class="form-control" readonly>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3">
+
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                        <div class="card-header mb-1">Quantidade de clientes por tipo de veículo</div>
+
+                        <div class="row">
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Moto</div>
+                                    <input type="text" id="quantMoto" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Carro</div>
+                                    <input type="text" id="quantCarro" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Caminhão</div>
+                                    <input type="text" id="quantCaminhao" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-*">
+
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                        <div class="card-header mb-1">Quantidade de vagas disponíveis por tipo de veículo</div>
+
+                        <div class="row">
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Moto</div>
+                                    <input type="text" id="quantMotoDisp" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Carro</div>
+                                    <input type="text" id="quantCarroDisp" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-4 card">
+
+                                <div class="card-body">
+                                    <div class="card-header">Caminhão</div>
+                                    <input type="text" id="quantCaminhaoDisp" class="form-control text-center" readonly>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

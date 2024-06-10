@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+
+    <script src="/bootstrap/bootstrap.min.js"></script>
+
+    <script type="module" src="cadastro.js"></script>
+    <script type="module" src="../src/index.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 align-self-center">
+
+                <form class="text-center">
+
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+
+                            <div class="card-header mb-2">
+                                Cadastro
+                            </div>
+
+                            <fieldset>
+
+                                <div class="mb-2">
+                                    <label>Nome</label>
+                                    <input type="text" id="nomePropCad" name="inputCadastro" class="form-control"
+                                        placeholder="seu nome">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Telefone</label> <input type="number" id="telefoneCad" name="inputCadastro"
+                                        class="form-control" placeholder="Ex: 19912345678">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Endereço</label> <input type="text" id="enderecoCad" class="form-control"
+                                        placeholder="seu endereço">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label>email</label><input type="text" id="emailCad" class="form-control"
+                                        placeholder="insira um email válido">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label>senha</label><input type="password" id="passwordCad" class="form-control"
+                                        placeholder="insira uma senha">
+                                </div>
+
+                                <button type="button" id="buttonCadastro" class="btn btn-primary">Cadastrar</button>
+                                <a href="/index.html">Clique aqui para realizar login.</a>
+
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

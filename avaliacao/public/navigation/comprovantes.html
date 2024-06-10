@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovantes</title>
+
+    <link rel="stylesheet" href="/navigation/CSS/print.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+
+    <script src="/bootstrap/bootstrap.min.js"></script>
+    <script type="module" src="/navigation/JS/carregarComprovantes.js"></script>
+    <script type="module" src="/navbar-admin/navbar.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="navbar-container"></div>
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 align-self-center">
+
+                <div id="navbar-container"></div>
+
+                <form class="text-center">
+
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+                            <div class="card-header mb-2">Comprovantes</div>
+
+                            <fieldset>
+                                <div class="mb-2" id="noprint">
+                                    <select id="selectComprovante" class="form-select"></select>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Nome</label> <input type="text" id="nomeProp" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Telefone</label> <input type="tel" id="telefone" class="form-control"
+                                        readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Endereço</label> <input type="text" id="endereco" class="form-control"
+                                        readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Modelo do veículo</label> <input type="text" id="nomeVeiculo"
+                                        class="form-control" readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Tipo do veículo</label> <input type="text" id="tipoCad" class="form-control"
+                                        readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Placa do veículo</label> <input type="text" id="placaCarro"
+                                        class="form-control" readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Hora da entrada: </label> <input type="text" class="form-control" readonly
+                                        id="horaEntrada">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Hora da saida: </label> <input type="text" class="form-control" readonly
+                                        id="horaSaida">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Preço fixo: </label> <input type="number" class="form-control" readonly
+                                        id="precoFixo">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Preço por hora: </label> <input type="number" class="form-control" readonly
+                                        id="precoHora">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Total: </label> <input type="number" id="precoTotal" class="form-control"
+                                        step="0.01" readonly>
+                                </div>
+
+                                <div id="noprint"><button type="button" class="btn btn-danger"
+                                        id="buttonExcluirComp">Excluir
+                                        Comprovante</button></div>
+                                <div id="noprint"><button type="button" class="btn btn-success"
+                                        id="buttonImprimir">Imprimir
+                                        Comprovante</button></div>
+
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>
