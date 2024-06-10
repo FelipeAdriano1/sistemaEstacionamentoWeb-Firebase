@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-Out de veículo</title>
+
+    <link rel="stylesheet" href="/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="/components/navbar-admin/navbar.js"></script></head>
+    <script type="module" src="/components/pages/navigation/JS/checkOut.js"></script>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="navbar-container"></div>
+
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 align-self-center">
+
+                <div id="navbar-container"></div>
+
+                <form class="text-center">
+
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+
+                            <div class="card-header mb-2">
+                                Check Out
+                            </div>
+
+                            <fieldset>
+                                <div class="mb-2">
+                                    <select id="selectReserva" class="form-select"></select>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="nomeProp">Nome do proprietário</label>
+                                    <input type="text" id="nomeProp" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="endereco">Endereço</label>
+                                    <input type="text" id="endereco" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" id="telefone" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="nomeVeiculo">Modelo do veículo</label>
+                                    <input type="text" id="nomeVeiculo" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="tipoCad">Tipo de veículo</label>
+                                    <input type="text" id="tipoCad" class="form-control" readonly>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="placaCarro">Placa do carro</label>
+                                    <input type="text" id="placaCarro" readonly class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="horaEntrada">Hora da entrada</label>
+                                    <input type="text" readonly id="horaEntrada" class="form-control">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label for="horaSaida">Hora da saida</label>
+                                    <input type="datetime-local" id="horaSaida" class="form-control">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label for="precoFixo">Preço fixo</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" readonly id="precoFixo" class="form-control">
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label for="precoHora">Preço por hora</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" readonly id="precoHora" class="form-control">
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label for="precoTotal">Preço Total</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="number" id="precoTotal" step="0.01" class="form-control">
+                                    </div>
+                                </div>
+
+                                <button type="button" id="buttonCheckOut" class="btn btn-primary">Emitir Check-out</button>
+                                <button type="button" id="buttonExcluirReserva" class="btn btn-danger">Excluir reserva</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
